@@ -44,7 +44,7 @@ public class Conversion {
 
         //https://www.javatpoint.com/java-decimal-to-binary
 
-        int binary[] = new int[40];
+        int[] binary = new int[40];
         int index = 0;
 
         while (decimal > 0) {
@@ -52,7 +52,7 @@ public class Conversion {
             decimal = decimal / 2;
         }
 
-        for (int i = index - 1; i > 0; i--) {
+        for (int i = index - 1; i >= 0; i--) {
             System.out.print(binary[i]);
         }
     }
